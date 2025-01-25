@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href = "styles.css" rel = "stylesheet" type = "text/css"/>
+  <title>Weather App</title>
+</head>
+<body>
+  <div id="weathercard">
+    <div>
+      <input type="text" placeholder="Enter city name" id = "inputs" />
+      <button onclick="search()">
+        <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search" />
+      </button>
+    </div>
+    <div id="weather-icon"><img id = "weatherImg" src = "" alt = "weather" style = "display: none"/></div>
+    <div id="temperature"></div>
+    <div id="city-name"></div>
+    <div id="info">
+      <div>
+        <img src="images/humidity.png" alt="Humidity" style = "display: none" id = "humidImg" />
+        <div id = "humidityInfo"></div>
+      </div>
+      <div>
+        <img src="images/wind.png" alt="Wind" style = "display: none" id = "windImg" />
+        <div id = "windInfo"></div>
+      </div>
+    </div>
+  </div>
+  <script src = "index.js"></script>
+</body>
+</html>
